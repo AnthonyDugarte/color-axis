@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(90deg, #0C8DE3, #6B30AB, #CD3592);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-ca-gradient {
+    background: linear-gradient(135deg, #2440A7, #6B30AB, #CD3592, #FE6A71);
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(90deg, #0C8DE3, #6B30AB, #CD3592) 1;
+  }
+}
